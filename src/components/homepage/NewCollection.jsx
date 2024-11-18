@@ -46,7 +46,7 @@ const NewCollection = () => {
       <div className="container">
         <h2 className='text-center mt-[15rem]'>new collection</h2>
         <p className='text-center mb-10'>Our latest collection, where classic and contemporary styles converge in perfect harmony.</p>
-        <div className=' grid grid-cols-3 gap-5'>
+        <div className=' md:grid md:grid-cols-3 gap-5'>
           {newCollectionArray.map((item,key) => (
          <CardItem item={item} key={key}/> 
         ))}

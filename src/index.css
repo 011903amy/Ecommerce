@@ -39,5 +39,17 @@
   .container {
     @apply max-w-[2100px] mx-auto px-4;
   }
-
+  .menu-btn span{
+    @apply h-[3px] w-5 block mb-1 transition-all bg-black md:hidden;
+  }
+  .menu-btn.active span:nth-child(2){
+    @apply opacity-0;
+  }
+  .menu-btn.active span:nth-child(1){
+    @apply rotate-[145deg] translate-y-3 duration-700;
+  }
+  .menu-btn.active span:nth-child(3){
+    @apply rotate-[145deg] translate-y-3 duration-700;
+    @apply -rotate-[145deg]  translate-y-[-2px] ;
+  }
 }
